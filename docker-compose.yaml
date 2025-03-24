@@ -1,0 +1,141 @@
+version: '3.8'
+
+networks:
+  mlops_network:
+    driver: bridge
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
+    networks:
+      - mlops_network
+    restart: always
+
+  airflow-webserver:
+    build: ./airflow
+    image: custom-airflow:latest
+    container_name: airflow-webserver
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./datasets:/opt/airflow/datasets
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - mlops_network
+    command: webserver
+    restart: always
+
+  airflow-scheduler:
+    build: ./airflow
+    image: custom-airflow:latest
+    container_name: airflow-scheduler
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./datasets:/opt/airflow/datasets
+    depends_on:
+      - postgres
+    networks:
+      - mlops_network
+    command: scheduler
+    restart: always
+
+
+  mlflow:
+    build: ./mlflow
+    container_name: mlflow
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - MLFLOW_BACKEND_STORE_URI=mysql+pymysql://mlflow_user:mlflow_pass@mysql/mlflow_db
+      - AWS_ACCESS_KEY_ID=minioadmin
+      - AWS_SECRET_ACCESS_KEY=minioadmin
+      - MLFLOW_S3_ENDPOINT_URL=http://minio:9000
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow:/mlflow
+    depends_on:
+      - mysql
+      - minio
+    networks:
+      - mlops_network
+    restart: always
+
+  minio:
+    image: minio/minio
+    container_name: minio
+    environment:
+      - MINIO_ACCESS_KEY=minioadmin
+      - MINIO_SECRET_KEY=minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - ./minio:/data
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    networks:
+      - mlops_network
+    restart: always
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=mlflow_db
+      - MYSQL_USER=mlflow_user
+      - MYSQL_PASSWORD=mlflow_pass
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - mlops_network
+    restart: always
+
+  inference:
+    build: ./inference
+    container_name: inference
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mlflow
+    networks:
+      - mlops_network
+    restart: always
+
+  ui:
+    build: ./ui
+    container_name: ui
+    ports:
+      - "8503:8503"
+    depends_on:
+      - inference
+    networks:
+      - mlops_network
+    restart: always
+
+
+
+
+

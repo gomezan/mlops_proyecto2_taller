@@ -1,0 +1,27 @@
+[2025-03-24T00:25:06.450+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: descargar_datos_api.obtener_datos_grupo_5 scheduled__2025-03-24T00:20:00+00:00 [queued]>
+[2025-03-24T00:25:06.737+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: descargar_datos_api.obtener_datos_grupo_5 scheduled__2025-03-24T00:20:00+00:00 [queued]>
+[2025-03-24T00:25:06.742+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-03-24T00:25:06.877+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): obtener_datos_grupo_5> on 2025-03-24 00:20:00+00:00
+[2025-03-24T00:25:07.001+0000] {standard_task_runner.py:60} INFO - Started process 390 to run task
+[2025-03-24T00:25:07.075+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'descargar_datos_api', 'obtener_datos_grupo_5', 'scheduled__2025-03-24T00:20:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/descargar_datos_api.py', '--cfg-path', '/tmp/tmpsjzzld5w']
+[2025-03-24T00:25:07.101+0000] {standard_task_runner.py:88} INFO - Job 40: Subtask obtener_datos_grupo_5
+[2025-03-24T00:25:08.033+0000] {task_command.py:423} INFO - Running <TaskInstance: descargar_datos_api.obtener_datos_grupo_5 scheduled__2025-03-24T00:20:00+00:00 [running]> on host 823281a76116
+[2025-03-24T00:25:09.254+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='descargar_datos_api' AIRFLOW_CTX_TASK_ID='obtener_datos_grupo_5' AIRFLOW_CTX_EXECUTION_DATE='2025-03-24T00:20:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-03-24T00:20:00+00:00'
+[2025-03-24T00:25:12.962+0000] {descargar_datos_api.py:33} ERROR - [Grupo 5] Error al obtener datos: [Errno 13] Permission denied: '/opt/***/datasets/group_5'
+[2025-03-24T00:25:12.963+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/descargar_datos_api.py", line 24, in obtener_datos
+    os.makedirs(group_dir, exist_ok=True)
+  File "/usr/local/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/opt/airflow/datasets/group_5'
+[2025-03-24T00:25:13.195+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=descargar_datos_api, task_id=obtener_datos_grupo_5, execution_date=20250324T002000, start_date=20250324T002506, end_date=20250324T002513
+[2025-03-24T00:25:13.286+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 40 for task obtener_datos_grupo_5 ([Errno 13] Permission denied: '/opt/airflow/datasets/group_5'; 390)
+[2025-03-24T00:25:13.379+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-03-24T00:25:13.731+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

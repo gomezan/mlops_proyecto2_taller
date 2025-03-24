@@ -1,0 +1,215 @@
+[2025-03-24T00:02:11.983+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-03-24T00:02:11.984+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-03-24T00:02:11.984+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-24T00:02:11.984+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-24T00:02:11.985+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-24T00:02:58.779+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-24T00:05:15.934+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-03-24T00:05:15.935+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-03-24T00:05:15.936+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-24T00:05:15.936+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-24T00:05:15.937+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-24T00:08:49.406+0000] {manager.py:451} INFO - Exiting gracefully upon receiving signal 15
+[2025-03-24T00:11:03.536+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-03-24T00:11:03.538+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-03-24T00:11:03.539+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-03-24T00:11:03.539+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-24T00:11:03.540+0000] {manager.py:741} INFO - There are 0 files in /opt/airflow/dags
+[2025-03-24T00:16:03.902+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-24T00:16:03.904+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-03-24T00:16:06.006+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/descargar_datos_api.py    163  2.05s             0           0
+================================================================================
+[2025-03-24T00:16:36.266+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  3.47s           2025-03-24T00:16:07
+================================================================================
+[2025-03-24T00:17:06.291+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.09s           2025-03-24T00:16:38
+================================================================================
+[2025-03-24T00:17:36.731+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  6.23s           2025-03-24T00:17:15
+================================================================================
+[2025-03-24T00:18:06.981+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.75s           2025-03-24T00:17:46
+================================================================================
+[2025-03-24T00:18:37.201+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.70s           2025-03-24T00:18:17
+================================================================================
+[2025-03-24T00:19:07.874+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.25s           2025-03-24T00:18:48
+================================================================================
+[2025-03-24T00:19:38.104+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.11s           2025-03-24T00:19:20
+================================================================================
+[2025-03-24T00:20:08.136+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.39s           2025-03-24T00:19:51
+================================================================================
+[2025-03-24T00:20:38.780+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.18s           2025-03-24T00:20:22
+================================================================================
+[2025-03-24T00:21:04.081+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-24T00:21:04.086+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-03-24T00:21:09.143+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.64s           2025-03-24T00:20:53
+================================================================================
+[2025-03-24T00:21:39.406+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.58s           2025-03-24T00:21:24
+================================================================================
+[2025-03-24T00:22:09.656+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.70s           2025-03-24T00:21:55
+================================================================================
+[2025-03-24T00:22:39.864+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.01s           2025-03-24T00:22:26
+================================================================================
+[2025-03-24T00:23:10.051+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.58s           2025-03-24T00:22:57
+================================================================================
+[2025-03-24T00:23:40.295+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.09s           2025-03-24T00:23:28
+================================================================================
+[2025-03-24T00:24:10.510+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.65s           2025-03-24T00:23:59
+================================================================================
+[2025-03-24T00:24:40.708+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.68s           2025-03-24T00:24:29
+================================================================================
+[2025-03-24T00:25:11.195+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  1.70s           2025-03-24T00:25:01
+================================================================================
+[2025-03-24T00:25:41.434+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.64s           2025-03-24T00:25:32
+================================================================================
+[2025-03-24T00:26:04.210+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-03-24T00:26:04.213+0000] {manager.py:741} INFO - There are 1 files in /opt/airflow/dags
+[2025-03-24T00:26:11.708+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.64s           2025-03-24T00:26:03
+================================================================================
+[2025-03-24T00:26:41.891+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.67s           2025-03-24T00:26:34
+================================================================================
+[2025-03-24T00:27:12.126+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.90s           2025-03-24T00:27:05
+================================================================================
+[2025-03-24T00:27:42.466+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                 PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/descargar_datos_api.py                           1           0  0.62s           2025-03-24T00:27:35
+================================================================================

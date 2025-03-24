@@ -1,0 +1,172 @@
+[2025-03-24T00:16:03.987+0000] {processor.py:161} INFO - Started process (PID=163) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:16:03.990+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:16:03.993+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:03.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:16:06.448+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:16:07.000+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:06.999+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:descargar_datos_api
+[2025-03-24T00:16:07.018+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:07.018+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:descargar_datos_api
+[2025-03-24T00:16:07.032+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:07.031+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:descargar_datos_api
+[2025-03-24T00:16:07.033+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:07.032+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:16:07.054+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:07.051+0000] {dag.py:3058} INFO - Creating ORM DAG for descargar_datos_api
+[2025-03-24T00:16:07.351+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:07.351+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:10:00+00:00, run_after=2025-03-24 00:15:00+00:00
+[2025-03-24T00:16:07.385+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 3.406 seconds
+[2025-03-24T00:16:37.743+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:16:37.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:16:37.747+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:37.746+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:16:38.551+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:16:38.615+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:38.614+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:16:38.674+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:16:38.674+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:10:00+00:00, run_after=2025-03-24 00:15:00+00:00
+[2025-03-24T00:16:38.723+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.991 seconds
+[2025-03-24T00:17:09.368+0000] {processor.py:161} INFO - Started process (PID=226) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:17:09.370+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:17:09.374+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:17:09.372+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:17:13.974+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:17:14.618+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:17:14.617+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:17:15.035+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:17:15.035+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:15:00+00:00, run_after=2025-03-24 00:20:00+00:00
+[2025-03-24T00:17:15.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 6.029 seconds
+[2025-03-24T00:17:45.835+0000] {processor.py:161} INFO - Started process (PID=241) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:17:45.838+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:17:45.841+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:17:45.840+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:17:46.380+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:17:46.446+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:17:46.445+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:17:46.492+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:17:46.492+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:15:00+00:00, run_after=2025-03-24 00:20:00+00:00
+[2025-03-24T00:17:46.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.701 seconds
+[2025-03-24T00:18:16.814+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:18:16.816+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:18:16.817+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:18:16.817+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:18:17.319+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:18:17.362+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:18:17.361+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:18:17.401+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:18:17.401+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:15:00+00:00, run_after=2025-03-24 00:20:00+00:00
+[2025-03-24T00:18:17.428+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.623 seconds
+[2025-03-24T00:18:47.729+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:18:47.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:18:47.741+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:18:47.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:18:48.586+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:18:48.676+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:18:48.675+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:18:48.792+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:18:48.791+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:15:00+00:00, run_after=2025-03-24 00:20:00+00:00
+[2025-03-24T00:18:48.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 1.156 seconds
+[2025-03-24T00:19:19.002+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:19:19.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:19:19.020+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:19:19.015+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:19:19.704+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:19:19.797+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:19:19.794+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:19:19.899+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:19:19.898+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:15:00+00:00, run_after=2025-03-24 00:20:00+00:00
+[2025-03-24T00:19:19.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.984 seconds
+[2025-03-24T00:19:50.341+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:19:50.348+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:19:50.350+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:19:50.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:19:51.346+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:19:51.426+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:19:51.425+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:19:51.489+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:19:51.488+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:15:00+00:00, run_after=2025-03-24 00:20:00+00:00
+[2025-03-24T00:19:51.545+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 1.240 seconds
+[2025-03-24T00:20:21.714+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:20:21.718+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:20:21.720+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:20:21.719+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:20:22.667+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:20:22.711+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:20:22.710+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:20:22.747+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:20:22.747+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:20:22.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 1.082 seconds
+[2025-03-24T00:20:52.885+0000] {processor.py:161} INFO - Started process (PID=307) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:20:52.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:20:52.893+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:20:52.893+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:20:53.326+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:20:53.392+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:20:53.392+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:20:53.439+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:20:53.439+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:20:53.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.597 seconds
+[2025-03-24T00:21:23.721+0000] {processor.py:161} INFO - Started process (PID=313) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:21:23.723+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:21:23.724+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:21:23.724+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:21:24.119+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:21:24.170+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:21:24.169+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:21:24.204+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:21:24.204+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:21:24.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.524 seconds
+[2025-03-24T00:21:54.557+0000] {processor.py:161} INFO - Started process (PID=319) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:21:54.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:21:54.564+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:21:54.564+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:21:55.031+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:21:55.103+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:21:55.102+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:21:55.155+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:21:55.154+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:21:55.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.653 seconds
+[2025-03-24T00:22:25.454+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:22:25.456+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:22:25.460+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:22:25.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:22:26.053+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:22:26.174+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:22:26.172+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:22:26.263+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:22:26.263+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:22:26.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.910 seconds
+[2025-03-24T00:22:56.630+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:22:56.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:22:56.635+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:22:56.635+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:22:57.054+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:22:57.095+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:22:57.094+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:22:57.130+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:22:57.129+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:22:57.155+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.536 seconds
+[2025-03-24T00:23:27.231+0000] {processor.py:161} INFO - Started process (PID=337) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:23:27.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:23:27.238+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:23:27.237+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:23:27.958+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:23:28.054+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:23:28.053+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:23:28.138+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:23:28.137+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:23:28.221+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 1.003 seconds
+[2025-03-24T00:23:58.435+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:23:58.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:23:58.440+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:23:58.439+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:23:58.870+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:23:58.926+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:23:58.925+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:23:58.985+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:23:58.984+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:23:59.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.597 seconds
+[2025-03-24T00:24:29.269+0000] {processor.py:161} INFO - Started process (PID=349) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:24:29.273+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:24:29.275+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:24:29.274+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:24:29.723+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:24:29.778+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:24:29.778+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:24:29.830+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:24:29.829+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:20:00+00:00, run_after=2025-03-24 00:25:00+00:00
+[2025-03-24T00:24:29.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.616 seconds
+[2025-03-24T00:25:00.094+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:25:00.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:25:00.101+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:25:00.100+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:25:00.946+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:25:01.110+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:25:01.109+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:25:01.402+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:25:01.402+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:25:01.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 1.547 seconds
+[2025-03-24T00:25:31.855+0000] {processor.py:161} INFO - Started process (PID=391) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:25:31.858+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:25:31.861+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:25:31.861+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:25:32.331+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:25:32.373+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:25:32.373+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:25:32.411+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:25:32.410+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:25:32.440+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.590 seconds
+[2025-03-24T00:26:02.594+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:26:02.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:26:02.600+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:26:02.599+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:26:03.028+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:26:03.085+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:26:03.084+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:26:03.137+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:26:03.136+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:26:03.178+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.592 seconds
+[2025-03-24T00:26:33.441+0000] {processor.py:161} INFO - Started process (PID=403) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:26:33.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:26:33.446+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:26:33.445+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:26:33.902+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:26:33.970+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:26:33.969+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:26:34.018+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:26:34.017+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:26:34.050+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.615 seconds
+[2025-03-24T00:27:04.350+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:27:04.354+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:27:04.358+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:27:04.357+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:27:04.972+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:27:05.033+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:27:05.032+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:27:05.083+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:27:05.082+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:27:05.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.815 seconds
+[2025-03-24T00:27:35.306+0000] {processor.py:161} INFO - Started process (PID=415) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:27:35.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:27:35.309+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:27:35.309+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:27:35.750+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:27:35.795+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:27:35.794+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:27:35.829+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:27:35.828+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:27:35.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.555 seconds
+[2025-03-24T00:28:06.112+0000] {processor.py:161} INFO - Started process (PID=421) to work on /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:28:06.114+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/descargar_datos_api.py for tasks to queue
+[2025-03-24T00:28:06.116+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:28:06.115+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:28:06.534+0000] {processor.py:840} INFO - DAG(s) 'descargar_datos_api' retrieved from /opt/airflow/dags/descargar_datos_api.py
+[2025-03-24T00:28:06.597+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:28:06.596+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-03-24T00:28:06.650+0000] {logging_mixin.py:188} INFO - [2025-03-24T00:28:06.649+0000] {dag.py:3823} INFO - Setting next_dagrun for descargar_datos_api to 2025-03-24 00:25:00+00:00, run_after=2025-03-24 00:30:00+00:00
+[2025-03-24T00:28:06.700+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/descargar_datos_api.py took 0.593 seconds
