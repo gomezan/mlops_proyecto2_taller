@@ -20,8 +20,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Comando por defecto para iniciar el servidor
-CMD mlflow server \
-    --backend-store-uri mysql+pymysql://airflow:airflow@mysql/mlflow \
-    --default-artifact-root s3://mlflow/ \
-    --host 0.0.0.0 \
-    --port 5000
+CMD ["python","-m","mlflow", "server","--backend-store-uri", "mysql+pymysql://mlflow_user:mlflow_pass@mysql/mlflow_db", "--default-artifact-root", "s3://mlflow/", "--host", "0.0.0.0", "--port", "5000"]
+
