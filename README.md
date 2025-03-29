@@ -16,6 +16,7 @@ Los datos para entrenar el modelo, debieron ser disponibilizados desde la maquin
 Estructura del Repositorio:
 
 El repositorio está organizado de la siguiente manera:
+
 •	airflow/: Contiene los DAGs y configuraciones para la orquestación de flujos de trabajo utilizando Apache Airflow.
 
 Dags:
