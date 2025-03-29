@@ -31,3 +31,19 @@ postgres/
 # IDEs
 .vscode/
 .idea/
+# Airflow logs
+airflow/logs/
+
+# MinIO system files
+minio/.minio.sys/
+
+# MySQL data
+mysql/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Otros temporales
+.env
+*.log
