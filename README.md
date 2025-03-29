@@ -68,5 +68,6 @@ Carga y codifica los datos. Divide en conjuntos de entrenamiento y prueba. Defin
 * Modelo serializado (log_model)
 * Guarda el mejor modelo localmente usando pickle.
 
-Screenshot from 2025-03-29 15-23-28
+![Screenshot from 2025-03-29 15-23-28](https://github.com/user-attachments/assets/cf0b0eef-c357-42b8-9931-12e3775bb9c1)
+
  
