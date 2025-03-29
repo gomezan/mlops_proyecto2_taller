@@ -9,7 +9,9 @@ Integrantes:
 Introducción:
 En este proyecto se busca desarrollar, entrenar e implementar un modelo para la clasificación de tipos de cobertura foresta, utilizando las herramientas Airflow como orquestador, MLFlow, para registrar experimentos y el modelo final; Minio como almacenamiento de objetos y MySQL como base de datos de la metada.
 
-API de datos:....
+Los datos para entrenar el modelo, debieron ser disponibilizados desde la maquina virtual en el puerto http://10.43.101.187/data?group_number=1
+
+![Screenshot from 2025-03-29 16-06-41](https://github.com/user-attachments/assets/6dcd7371-a272-45ea-8929-d3db14abb1b8)
 
 Estructura del Repositorio:
 
