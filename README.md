@@ -61,7 +61,7 @@ Se creó un archivo docker-compose-inference.yaml con los sigueintes componentes
 * image: utiliza la imagen publicada previamente en DockerHub
 * ports: expone el puerto 8000 al host para acceder a la API
 * environment: configura variables necesarias para que el contenedor se conecte a MLflow y MinIO desde el host local
-* 
+  
 Las variables de entorno permiten que el servicio dentro del contenedor acceda a MLflow Tracking Server en el host local (http://host.docker.internal:5000) y MinIO como backend de almacenamiento de modelos (http://host.docker.internal:9000)
 
 ![api con imagen docker hub](https://github.com/user-attachments/assets/78b06014-2cad-4c0d-984d-fbcfe6c28e1d)
