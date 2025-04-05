@@ -2,18 +2,44 @@
 MLOps: Taller Locust
 
 Integrantes: 
+
 •	Maria del Mar Montenegro Mafla
+
 •	Andrés Gómez
+
 •	Juan Felipe forero 
 
 1. Creación de API de inferencia con FastAPI
 
-Se implementó un servicio FastAPI en inference/main.py que:
+Se desarrolló una API RESTful utilizando FastAPI con el objetivo de exponer el modelo de predicción de cobertura forestal previamente entrenado y registrado en MLflow bajo el nombre BestModelRF, en estado Production. El modelo se cargadesde MLflow Registry a traves de .py (estado: Production), realiza inferencia en el endpoint /predict, preprocesa datos para compatibilidad con el modelo
 
-* Carga el modelo desde MLflow Registry a traves de .py (estado: Production)
-* Realiza inferencia en el endpoint /predict
-* Preprocesa datos para compatibilidad con el modelo
-* Fue empaquetado en una imagen Docker funcional
+Caracteristicas principales:
+* La API se conecta a MLflow a través de la URI:
+  MODEL_URI = "models:/BestModelRF/Production"
+  model = mlflow.pyfunc.load_model(MODEL_URI)
+
+* El modelo se carga dinámicamente desde el MLflow Registry usando el cliente mlflow.pyfunc
+* El modelo es un RandomForestClassifier entrenado mediante Airflow y registrado en MLflow con sus hiperparámetros y artefactos asociados
+* La configuración se conecta a MinIO como almacenamiento de artefactos, usando las siguientes variables de entorno:
+  MLFLOW_TRACKING_URI
+  MLFLOW_S3_ENDPOINT_URL
+  AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY
+
+* El modelo requiere una matriz de entrada que incluya 54 columnas, las cuales consisten en:
+  10 columnas numéricas base (e.g. Elevation, Aspect, Slope, etc.)
+  4 columnas generadas por codificación one-hot de Wilderness_Area
+  40 columnas generadas por codificación one-hot de Soil_Type
+La API implementa esta lógica manualmente, asegurando la consistencia con las columnas esperadas del modelo. JSON de entrada esperado ejemplo:
+
+{
+  "features": [
+    3000.0, 45.0, 10.0,
+    100.0, 20.0, 200.0,
+    220.0, 230.0, 180.0, 150.0,
+    0, 0
+  ]
+}
 
 ![api](https://github.com/user-attachments/assets/39a21de4-ae01-4e45-a10c-70a791e51a67)
 
@@ -28,12 +54,15 @@ La imagen fue subida a DockerHub desde la terminal, Etiqueta: montenegromm/infer
 
 
 3. Despliegue con docker-compose
+El objetivo de este punto fue desplegar el servicio de inferencia desarrollado en FastAPI dentro de un contenedor Docker, utilizando Docker Compose para simplificar la orquestación y asegurar la correcta conexión con los servicios de MLflow y MinIO.
 
-Se creó un archivo docker-compose-inference.yaml que incluye:
+Se creó un archivo docker-compose-inference.yaml con los sigueintes componentes clave:
 
-* Contenedor de FastAPI (inference-api)
-* Variables necesarias para conectarse a MLflow y MinIO
-* Se verificó acceso correcto al modelo registrado y predicciones válidas en Swagger.
+* image: utiliza la imagen publicada previamente en DockerHub
+* ports: expone el puerto 8000 al host para acceder a la API
+* environment: configura variables necesarias para que el contenedor se conecte a MLflow y MinIO desde el host local
+* 
+Las variables de entorno permiten que el servicio dentro del contenedor acceda a MLflow Tracking Server en el host local (http://host.docker.internal:5000) y MinIO como backend de almacenamiento de modelos (http://host.docker.internal:9000)
 
 ![api con imagen docker hub](https://github.com/user-attachments/assets/78b06014-2cad-4c0d-984d-fbcfe6c28e1d)
 
@@ -41,12 +70,17 @@ Se creó un archivo docker-compose-inference.yaml que incluye:
 
 Se construyó los siguientes documentos:
 
-* locustfile.py: cliente Locust para POST /predict
+* locustfile.py: cliente Locust para POST /predict:
+Este archivo define la clase que simula los usuarios virtuales. La tarea predict() realiza peticiones POST al endpoint /predict de la API y utiliza datos de prueba compatibles con el modelo BestModelRF.
+
 * docker-compose-locust.yaml: levanta inference-api + Locust
+ Este archivo permite levantar dos servicios: inference-api y locust
+ - inference-api: Usa la imagen publicada montenegromm/inference-api:latest, esta configurado con variables de entorno para conectarse a MLflow y MinIO y expone el puerto 8000 para recibir peticiones.
+ - locust: Expone la interfaz gráfica de Locust en http://localhost:8089 y se conecta internamente al contenedor inference-api en la misma red
+
 * Se realizaron pruebas con distintos niveles de concurrencia y ramp-up recopilando : № de usuarios activos, Porcentaje de fallos,Tiempo medio de respuesta.
 
 ![locust con inferencia a la api](https://github.com/user-attachments/assets/d0fef7ac-c342-4055-b72f-877000dc0a0a)
-
 
 5. Ajuste de recursos para soportar 10,000 usuarios
 
