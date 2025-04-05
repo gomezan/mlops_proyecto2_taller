@@ -7,7 +7,7 @@ Integrantes:
 
 •	Andrés Gómez
 
-•	Juan Felipe forero 
+•	Juan Felipe Forero 
 
 1. Creación de API de inferencia con FastAPI
 
