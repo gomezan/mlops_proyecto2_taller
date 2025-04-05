@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  locust:
+    image: locustio/locust
+    ports:
+      - "8089:8089"
+    volumes:
+      - ./locust:/mnt/locust
+    working_dir: /mnt/locust
+    command: >
+      -f locustfile.py
+      --host=http://inference-api:8000
+    depends_on:
+      - inference-api
+
+  inference-api:
+    image: montenegromm/inference-api:latest
+    environment:
+      MLFLOW_TRACKING_URI: http://host.docker.internal:5000
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+      MLFLOW_S3_ENDPOINT_URL: http://host.docker.internal:9000
+    deploy:
+      resources:
+        limits:
+          cpus: "1.5"
+          memory: "2.5G"
+
+
+
+
+
+
+
+

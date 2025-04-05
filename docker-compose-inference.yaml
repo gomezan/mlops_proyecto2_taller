@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  inference-api:
+    image: montenegromm/inference-api:latest
+    container_name: inference-api
+    ports:
+      - "8000:8000"
+    environment:
+      MLFLOW_TRACKING_URI: http://host.docker.internal:5000
+      AWS_ACCESS_KEY_ID: minioadmin
+      AWS_SECRET_ACCESS_KEY: minioadmin
+      MLFLOW_S3_ENDPOINT_URL: http://host.docker.internal:9000
+
+
+
+
+
+
