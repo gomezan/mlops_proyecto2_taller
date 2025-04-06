@@ -97,6 +97,15 @@ Resultados de las experimentaciones:
      10000	         |       no	         |       16700	      |      31524	 |        6G	     |       3	   | Sin falla
      10000	         |       no	         |       11834	      |      23659	 |       5,5G	    |      2,5	  | Sin falla
 
+| Usuarios simulados | Falla en /predict | Tiempo medio (ms) | Máximo (ms) | Memoria límite | CPU límite | Observaciones                        |
+|--------------------|-------------------|--------------------|-------------|----------------|------------|--------------------------------------|
+| 1                  | sí                | 4                  | 7877        | 256M           | 0,25       | Falla en todas las predicciones      |
+| 1                  | no                | 27,13              | 42          | 6G             | 3          | Sin falla                             |
+| 10000              | sí                | 846                | 11028       | 5G             | 2,5        | Falla en 34% de predicciones         |
+| 10000              | no                | 16700              | 31524       | 6G             | 3          | Sin falla                             |
+| 10000              | no                | 11834              | 23659       | 5,5G           | 2,5        | Sin falla                             |
+
+
 Prueba 1:
 ![1 usuario](https://github.com/user-attachments/assets/3fbfa13d-c550-4b2e-89e0-7691c8084717)
 
